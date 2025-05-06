@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  #noticia {
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  #noticia:hover {
+    border-left-color: #45a049;
+    background-color: #f1f1f1;
+  }
+  
+  #titulo {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  #conteudo {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555555;
+  }
+  
+  .controles, .gerenciamento {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  @media (min-width: 600px) {
+    .controles, .gerenciamento {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .controles button, .gerenciamento button {
+      flex: 1 1 30%;
+    }
+  
+    .gerenciamento input, .gerenciamento textarea {
+      flex: 1 1 65%;
+    }
+  }
+  
