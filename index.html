@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leitor de Notícias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Leitor de Notícias</h1>
+    <div id="noticia">
+      <h2 id="titulo">Título da notícia</h2>
+      <p id="conteudo">Conteúdo da notícia...</p>
+    </div>
+    <div class="controles">
+      <button onclick="anterior()">Anterior</button>
+      <button onclick="proxima()">Próxima</button>
+      <button onclick="voltar()">Voltar</button>
+    </div>
+    <div class="gerenciamento">
+      <h3>Adicionar Nova Notícia</h3>
+      <input type="text" id="novoTitulo" placeholder="Título" />
+      <textarea id="novoConteudo" placeholder="Conteúdo"></textarea>
+      <button onclick="adicionarNoticia()">Adicionar</button>
+
+      <h3>Remover Notícia por ID</h3>
+      <input type="number" id="removerId" placeholder="ID da notícia" />
+      <button onclick="removerNoticia()">Remover</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
